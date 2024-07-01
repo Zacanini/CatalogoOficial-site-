@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    width: 100%;
+    max-width: 100vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#imgInicial {
+    display: flex;
+    justify-content: center;
+    background-image: url('imgs/imagemDeFundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    max-width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+
+#logo {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.81rem;
+    font-style: normal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.4rem;
+}
+
+#containerJogadores {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 90%;
+
+}
+
+
+
+.primeiroElemento {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #000000, #13006D);
+    margin: 10px 10px;
+    overflow: hidden;
+
+
+}
+
+.segundoElemento {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to left, #000000, #13006D);
+    margin: 10px 10px;
+    overflow: hidden;
+
+}
+
+
+
+.logo {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.81rem;
+    font-style: normal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.mbape {
+    margin-bottom: 150px;
+}
+
+.messi {
+    margin-top: 31px;
+}
+
+.levandowiski {
+    margin-bottom: 190px;
+}
+
+.ronaldo {
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 1.7rem;
+    letter-spacing: 0.30rem;
+    font-style: normal;
+    text-align: center;
+    color: rgb(32, 27, 27);
+
+}
+
+.span2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+}
+
+.containerCampeonatos {
+    position: relative;
+    /* Posicionamento relativo para o container principal */
+}
+
+.grid-container {
+    position: absolute;
+    /* Posicionamento absoluto para o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    /* Ajustes para a imagem de fundo */
+    background-image: url(imgs/arrascaeta.jpg);
+    /* Substitua por sua URL de imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Efeito de desfoque e opacidade */
+    filter: blur(3px) opacity(0.7);
+    /* Ajuste os valores conforme desejado */
+}
+
+.grid-container-LaLiga {
+    position: absolute;
+    /* Posicionamento absoluto para o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Ajustes para a imagem de fundo */
+    background-image: url(imgs/neymar.webp);
+    /* Substitua por sua URL de imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Efeito de desfoque e opacidade */
+    filter: blur(3px) opacity(0.7);
+    /* Ajuste os valores conforme desejado */
+}
+
+.grid-container-bundesliga {
+    position: absolute;
+    /* Posicionamento absoluto para o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Ajustes para a imagem de fundo */
+    background-image: url(imgs/Haaland_AP.jpg);
+    /* Substitua por sua URL de imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Efeito de desfoque e opacidade */
+    filter: blur(3px) opacity(0.7);
+    /* Ajuste os valores conforme desejado */
+}
+
+.containerNomeCampeonato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.grid-container-Ligueum {
+    position: absolute;
+    /* Posicionamento absoluto para o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Ajustes para a imagem de fundo */
+    background-image: url(imgs/messiChutando.jpg);
+    /* Substitua por sua URL de imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Efeito de desfoque e opacidade */
+    filter: blur(3px) opacity(0.7);
+    /* Ajuste os valores conforme desejado */
+}
+
+.grid-container-mls {
+    position: absolute;
+    /* Posicionamento absoluto para o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Ajustes para a imagem de fundo */
+    background-image: url(imgs/messiMLS.jpg);
+    /* Substitua por sua URL de imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Efeito de desfoque e opacidade */
+    filter: blur(3px) opacity(0.7);
+    /* Ajuste os valores conforme desejado */
+}
+
+.grid-container-premierLeague {
+    position: absolute;
+    /* Posicionamento absoluto para o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Ajustes para a imagem de fundo */
+    background-image: url(imgs/saalah.jfif);
+    /* Substitua por sua URL de imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Efeito de desfoque e opacidade */
+    filter: blur(3px) opacity(0.7);
+    /* Ajuste os valores conforme desejado */
+}
+.grid-container-serieA{
+    position: absolute;
+    /* Posicionamento absoluto para o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Ajustes para a imagem de fundo */
+    background-image: url(imgs/ronaldinhoMilan.jpg);
+    /* Substitua por sua URL de imagem */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    /* Efeito de desfoque e opacidade */
+    filter: blur(3px) opacity(0.7);
+    /* Ajuste os valores conforme desejado */
+}
+
+.nomeCampeonato {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 35px;
+    letter-spacing: 0.2rem;
+    margin: 0 10px;
+    padding: 10px 15px;
+    color: rgb(237, 237, 237);
+    background-color: #000000;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas de largura igual */
+    grid-template-rows: repeat(4, 1fr) 1fr;
+    /* 4 linhas de altura igual, última linha 1fr */
+
+
+    gap: 10px;
+    /* Ajuste o espaçamento entre os itens da grade */
+    margin: 50px 200px;
+
+    position: relative;
+}
+
+.grid2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas de largura igual */
+    grid-template-rows: repeat(2, 1fr) 1fr;
+    /* 4 linhas de altura igual, última linha 1fr */
+
+
+    row-gap: 50px;
+    /* Ajuste o espaçamento entre os itens da grade */
+    column-gap: 0;
+    margin: 120px 200px 0 200px;
+    padding-bottom: 100px;
+
+    position: relative;
+}
+
+.grid3 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas de largura igual */
+    grid-template-rows: repeat(2, 1fr) 1fr;
+    /* 4 linhas de altura igual, última linha 1fr */
+
+
+    row-gap: 50px;
+    /* Ajuste o espaçamento entre os itens da grade */
+    column-gap: 0;
+    margin: 120px 200px 0 200px;
+    padding-bottom: 100px;
+
+    position: relative;
+}
+
+.grid4 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas de largura igual */
+    grid-template-rows: 1fr;
+    /* 4 linhas de altura igual, última linha 1fr */
+
+
+
+    /* Ajuste o espaçamento entre os itens da grade */
+
+    margin: 120px 200px 0 200px;
+    padding-bottom: 100px;
+
+    position: relative;
+
+}
+
+.grid5 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-rows: 2fr;
+
+    row-gap: 25px;
+
+
+
+    /* Ajuste o espaçamento entre os itens da grade */
+
+    margin: 120px 200px 0 200px;
+    padding-bottom: 100px;
+
+    position: relative;
+}
+
+.grid6 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 5fr;
+
+    row-gap: 25px;
+
+
+
+    /* Ajuste o espaçamento entre os itens da grade */
+
+    margin: 120px 200px 0 200px;
+    padding-bottom: 100px;
+
+    position: relative;
+}
+.grid7 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr;
+
+    row-gap: 50px;
+
+
+
+    /* Ajuste o espaçamento entre os itens da grade */
+
+    margin: 120px 200px 0 200px;
+    padding-bottom: 100px;
+
+    position: relative;
+}
+
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.grid figure img {
+    transition: transform 0.2s ease-in-out;
+    /* Transição suave para o efeito de hover */
+    cursor: pointer;
+    /* Define o cursor como ponteiro para indicar clique */
+}
+
+/* Estilo para imagens no hover (passar o mouse) */
+.grid figure img:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% no hover */
+    z-index: 1;
+    /* Garante que a imagem fique sobreposta a outros elementos no hover */
+
+}
+
+
+.grid2 figure img {
+    transition: transform 0.2s ease-in-out;
+    /* Transição suave para o efeito de hover */
+    cursor: pointer;
+    /* Define o cursor como ponteiro para indicar clique */
+}
+
+/* Estilo para imagens no hover (passar o mouse) */
+.grid2 figure img:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% no hover */
+    z-index: 1;
+    /* Garante que a imagem fique sobreposta a outros elementos no hover */
+
+}
+
+.grid3 figure img {
+    transition: transform 0.2s ease-in-out;
+    /* Transição suave para o efeito de hover */
+    cursor: pointer;
+    /* Define o cursor como ponteiro para indicar clique */
+}
+
+/* Estilo para imagens no hover (passar o mouse) */
+.grid3 figure img:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% no hover */
+    z-index: 1;
+    /* Garante que a imagem fique sobreposta a outros elementos no hover */
+
+}
+
+.grid4 figure img {
+    transition: transform 0.2s ease-in-out;
+    /* Transição suave para o efeito de hover */
+    cursor: pointer;
+    /* Define o cursor como ponteiro para indicar clique */
+}
+
+.grid4 figure img:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% no hover */
+    z-index: 1;
+    /* Garante que a imagem fique sobreposta a outros elementos no hover */
+
+}
+
+.grid5 figure img {
+    transition: transform 0.2s ease-in-out;
+    /* Transição suave para o efeito de hover */
+    cursor: pointer;
+    /* Define o cursor como ponteiro para indicar clique */
+}
+
+.grid5 figure img:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% no hover */
+    z-index: 1;
+    /* Garante que a imagem fique sobreposta a outros elementos no hover */
+
+}
+
+.grid6 figure img {
+    transition: transform 0.2s ease-in-out;
+    /* Transição suave para o efeito de hover */
+    cursor: pointer;
+    /* Define o cursor como ponteiro para indicar clique */
+}
+
+.grid6 figure img:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% no hover */
+    z-index: 1;
+    /* Garante que a imagem fique sobreposta a outros elementos no hover */
+
+}
+.grid7 figure img {
+    transition: transform 0.2s ease-in-out;
+    /* Transição suave para o efeito de hover */
+    cursor: pointer;
+    /* Define o cursor como ponteiro para indicar clique */
+}
+
+.grid7 figure img:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% no hover */
+    z-index: 1;
+    /* Garante que a imagem fique sobreposta a outros elementos no hover */
+
+}
+
+
+.ContainerpainelLateral {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* Fixo na tela */
+    top: 6%;
+    /* Posição inicial no topo */
+    width: 100px;
+    height: 660px;
+    margin-left: 50px;
+    z-index: 100;
+
+    border: 2px solid rgba(0, 0, 0, 0.498);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2), -10px 0px 10px rgba(0, 0, 0, 0.2);
+
+
+}
+.ContainerpainelLateral2{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* Fixo na tela */
+    top: 6%;
+    /* Posição inicial no topo */
+    width: 100px;
+    height: 660px;
+    margin-left: 50px;
+    z-index: 100;
+
+    border: 2px solid rgba(0, 0, 0, 0.498);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2), -10px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+    margin: 5px 0;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.item img {
+    backface-visibility: hidden;
+}
+
+.item.flipped {
+    transform: rotateY(180deg);
+}
+
+.item:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% no hover */
+    cursor: pointer;
+}
+
+#botaoMais {
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+
+    border: 2px solid rgba(0, 0, 0, 0.498);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.116), -10px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+
+    overflow: hidden;
+
+
+}
+
+#botaoMais:hover {
+    cursor: pointer;
+}
+
+#botaoVoltar{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+
+    border: 2px solid rgba(0, 0, 0, 0.498);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.116), -10px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 8px;
+
+    overflow: hidden;
+}
+
+#botaoVoltar:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.ativo {
+    position: sticky;
+    /* Fixa na rolagem */
+}
+
+
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    /* Eleva 5px */
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.elemento-flutuante {
+    animation: flutuar 2s ease-in-out infinite;
+    /* Animação infinita */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra para efeito de elevação */
+}
