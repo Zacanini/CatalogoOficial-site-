@@ -11,6 +11,10 @@ html {
     margin: 0;
 }
 
+h1.titulo {
+    margin: 30px 0;
+}
+
 #imgInicial {
     display: flex;
     justify-content: center;
@@ -108,6 +112,10 @@ span {
 
 .ronaldo {
     margin-bottom: 20px;
+}
+
+.lebrom {
+    margin-bottom: 130px;
 }
 
 .titulo {
@@ -263,7 +271,8 @@ span {
     filter: blur(3px) opacity(0.7);
     /* Ajuste os valores conforme desejado */
 }
-.grid-container-serieA{
+
+.grid-container-serieA {
     position: absolute;
     /* Posicionamento absoluto para o pseudo-elemento */
     top: 0;
@@ -273,6 +282,27 @@ span {
 
     /* Ajustes para a imagem de fundo */
     background-image: url(imgs/ronaldinhoMilan.jpg);
+    /* Substitua por sua URL de imagem */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    /* Efeito de desfoque e opacidade */
+    filter: blur(3px) opacity(0.7);
+    /* Ajuste os valores conforme desejado */
+}
+
+.grid-container-nba {
+    position: absolute;
+    /* Posicionamento absoluto para o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    /* Ajustes para a imagem de fundo */
+    background-image: url(imgs/antonyDaves.jpg);
     /* Substitua por sua URL de imagem */
     background-size: cover;
     background-position: top;
@@ -410,6 +440,7 @@ span {
 
     position: relative;
 }
+
 .grid7 {
     display: grid;
     justify-content: center;
@@ -542,6 +573,7 @@ figcaption {
     /* Garante que a imagem fique sobreposta a outros elementos no hover */
 
 }
+
 .grid7 figure img {
     transition: transform 0.2s ease-in-out;
     /* Transição suave para o efeito de hover */
@@ -579,7 +611,8 @@ figcaption {
 
 
 }
-.ContainerpainelLateral2{
+
+.ContainerpainelLateral2 {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -643,7 +676,7 @@ figcaption {
     cursor: pointer;
 }
 
-#botaoVoltar{
+#botaoVoltar {
     width: 55px;
     height: 55px;
     border-radius: 50px;
@@ -659,22 +692,14 @@ figcaption {
     overflow: hidden;
 }
 
-#botaoVoltar:hover{
+#botaoVoltar:hover {
     cursor: pointer;
 }
-
-
-
-
-
-
 
 .ativo {
     position: sticky;
     /* Fixa na rolagem */
 }
-
-
 
 @keyframes flutuar {
     0% {
@@ -696,4 +721,92 @@ figcaption {
     /* Animação infinita */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     /* Sombra para efeito de elevação */
+}
+
+.containerCardPai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 580px;
+    border: 2px solid rgb(255, 253, 253);
+    border-radius: 20px;
+    margin: 50px 10px;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+.filhoUm {
+    position: relative;
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/kobyEjordan.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
+
+.filhoUm:hover .background-blur {
+    transform: rotateY(180deg);
+    filter: blur(4px);
+    cursor: pointer;
+}
+
+.logoNba {
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.filhoUm:hover .logoNba {
+    transform: scale(1.2);
+}
+
+.filhoDois{
+    position: relative;
+}
+
+.background-blur2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/Richard-Sherman.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
+
+.filhoDois:hover .background-blur2 {
+    transform: rotateY(180deg);
+    filter: blur(4px);
+    cursor: pointer;
+}
+.logoNfl {
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+.filhoDois:hover .logoNfl {
+    transform: scale(1.12);
 }
