@@ -324,7 +324,7 @@ span {
 
 
     /* Ajustes para a imagem de fundo */
-    background-image: url(imgs/islatan.jfif);
+    background-image: url(imgs/estadioReal.jfif);
     /* Substitua por sua URL de imagem */
     background-size: cover;
     background-position: top;
@@ -756,6 +756,7 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 30%;
     height: 580px;
     border: 2px solid rgb(255, 253, 253);
@@ -770,6 +771,10 @@ figcaption {
 .filhoUm {
     position: relative;
 }
+.filhoDois{
+    position: relative;
+}
+
 
 .background-blur {
     position: absolute;
@@ -784,27 +789,6 @@ figcaption {
     transition: transform 0.3s ease, filter 0.3s ease;
     z-index: 1;
 }
-
-.filhoUm:hover .background-blur {
-    transform: rotateY(180deg);
-    filter: blur(4px);
-    cursor: pointer;
-}
-
-.logoNba {
-    transition: transform 0.3s ease;
-    z-index: 2;
-    position: relative;
-}
-
-.filhoUm:hover .logoNba {
-    transform: scale(1.2);
-}
-
-.filhoDois{
-    position: relative;
-}
-
 .background-blur2 {
     position: absolute;
     top: 0;
@@ -818,17 +802,111 @@ figcaption {
     transition: transform 0.3s ease, filter 0.3s ease;
     z-index: 1;
 }
+.background-blur3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/gabigolTreino.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
+.background-blur4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/selecaoTreino.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
 
+
+.filhoUm:hover .background-blur {
+    transform: rotateY(180deg);
+    filter: blur(4px);
+    cursor: pointer;
+}
 .filhoDois:hover .background-blur2 {
     transform: rotateY(180deg);
     filter: blur(4px);
     cursor: pointer;
+}
+.filhoUm:hover .background-blur3 {
+    transform: rotateY(180deg);
+    filter: blur(4px);
+    cursor: pointer;
+}
+.filhoDois:hover .background-blur4 {
+    transform: rotateY(180deg);
+    filter: blur(4px);
+    cursor: pointer;
+}
+
+
+.logoNba {
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;
 }
 .logoNfl {
     transition: transform 0.3s ease;
     z-index: 2;
     position: relative;
 }
+.logoTreinoPsg{
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+.logoTreinoSeelecao{
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;  
+}
+
+
+.filhoUm:hover .logoNba {
+    transform: scale(1.2);
+}
 .filhoDois:hover .logoNfl {
     transform: scale(1.12);
 }
+.filhoUm:hover .logoTreinoPsg {
+    transform: scale(1.3);
+}
+.filhoDois:hover .logoTreinoSeelecao {
+    transform: scale(1.3);
+}
+
+
+
+.nomeCategoria{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+    text-shadow: 10px 10px 20px rgb(0, 0, 0);
+    color: #000000;
+    z-index: 200;
+    transition: transform 200ms ease-in;
+
+}
+
+
+.filhoUm:hover .nomeCategoria{
+    transform: scale(1.3);
+}
+.filhoDois:hover .nomeCategoria{
+    transform: scale(1.3);
+}
+
