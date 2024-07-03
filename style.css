@@ -124,6 +124,9 @@ span {
 .puyol{
     padding-bottom: 110px;
 }
+.romario{
+    margin-bottom: 130px;
+}
 
 .titulo {
     font-family: "Dela Gothic One", sans-serif;
@@ -381,6 +384,25 @@ span {
     /* Efeito de desfoque e opacidade */
     filter: blur(3px) opacity(0.7);
     /* Ajuste os valores conforme desejado */
+}
+.grid-container-selecao{
+    position: absolute;
+    /* Posicionamento absoluto para o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    /* Ajustes para a imagem de fundo */
+    background-image: url(imgs/belgica.webp);
+    /* Substitua por sua URL de imagem */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+     /* Efeito de desfoque e opacidade */
+     filter: blur(3px) opacity(0.7);
+     /* Ajuste os valores conforme desejado */
 }
 
 .nomeCampeonato {
@@ -928,6 +950,32 @@ figcaption {
     transition: transform 0.3s ease, filter 0.3s ease;
     z-index: 1;
 }
+.background-blur9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/espanha.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
+.background-blur10 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/nike.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
 
 
 .filhoUm:hover .background-blur {
@@ -966,6 +1014,16 @@ figcaption {
     cursor: pointer;
 }
 .filhoDois:hover .background-blur8 {
+    transform: rotateY(180deg);
+    filter: blur(4px);
+    cursor: pointer;
+}
+.filhoUm:hover .background-blur9 {
+    transform: rotateY(180deg);
+    filter: blur(4px);
+    cursor: pointer;
+}
+.filhoDois:hover .background-blur10 {
     transform: rotateY(180deg);
     filter: blur(4px);
     cursor: pointer;
@@ -1012,6 +1070,16 @@ figcaption {
     z-index: 2;
     position: relative;  
 }
+.logoSelecoes{
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+.logoCasual{
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
 
 
 .filhoUm:hover .logoNba {
@@ -1038,7 +1106,12 @@ figcaption {
 .filhoDois:hover .logoRetroSelecao{
     transform: scale(1.2);
 }
-
+.filhoUm:hover .logoSelecoes {
+    transform: scale(1.25);
+}
+.filhoDois:hover .logoCasual{
+    transform: scale(1.2);
+}
 
 
 .nomeCategoria{
@@ -1052,6 +1125,9 @@ figcaption {
     z-index: 200;
     transition: transform 200ms ease-in;
 
+}
+.nomeCampeonato{
+    text-align: center;
 }
 
 
