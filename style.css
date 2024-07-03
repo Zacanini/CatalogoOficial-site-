@@ -121,6 +121,9 @@ span {
 .benzema{
     margin-bottom: 100px;
 }
+.puyol{
+    padding-bottom: 110px;
+}
 
 .titulo {
     font-family: "Dela Gothic One", sans-serif;
@@ -349,6 +352,27 @@ span {
 
     /* Ajustes para a imagem de fundo */
     background-image: url(imgs/campNou.jpg);
+    /* Substitua por sua URL de imagem */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    /* Efeito de desfoque e opacidade */
+    filter: blur(3px) opacity(0.7);
+    /* Ajuste os valores conforme desejado */
+}
+
+.grid-container-retroClube{
+    position: absolute;
+    /* Posicionamento absoluto para o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    /* Ajustes para a imagem de fundo */
+    background-image: url(imgs/finalChampions.jpg);
     /* Substitua por sua URL de imagem */
     background-size: cover;
     background-position: top;
@@ -878,6 +902,32 @@ figcaption {
     transition: transform 0.3s ease, filter 0.3s ease;
     z-index: 1;
 }
+.background-blur7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/zidane.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
+.background-blur8 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/selecaoCampea.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
+}
 
 
 .filhoUm:hover .background-blur {
@@ -906,6 +956,16 @@ figcaption {
     cursor: pointer;
 }
 .filhoDois:hover .background-blur6 {
+    transform: rotateY(180deg);
+    filter: blur(4px);
+    cursor: pointer;
+}
+.filhoUm:hover .background-blur7 {
+    transform: rotateY(180deg);
+    filter: blur(4px);
+    cursor: pointer;
+}
+.filhoDois:hover .background-blur8 {
     transform: rotateY(180deg);
     filter: blur(4px);
     cursor: pointer;
@@ -942,6 +1002,16 @@ figcaption {
     z-index: 2;
     position: relative;  
 }
+.logoRetroClube{
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;  
+}
+.logoRetroSelecao{
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;  
+}
 
 
 .filhoUm:hover .logoNba {
@@ -962,6 +1032,12 @@ figcaption {
 .filhoDois:hover .logoJogadorSelecao {
     transform: scale(1.3);
 }
+.filhoUm:hover .logoRetroClube {
+    transform: scale(1.2);
+}
+.filhoDois:hover .logoRetroSelecao{
+    transform: scale(1.2);
+}
 
 
 
@@ -971,7 +1047,7 @@ figcaption {
     font-family: "Dela Gothic One", sans-serif;
     font-weight: 100;
     font-size: 35px;
-    text-shadow: 10px 10px 20px rgb(0, 0, 0);
+    text-shadow: 10px 10px 20px rgb(244, 244, 244);
     color: #000000;
     z-index: 200;
     transition: transform 200ms ease-in;
